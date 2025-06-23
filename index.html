@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+		<title>时间差计算</title>
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="1.js"></script>
+		<style>
+		#leftli li{
+			float:left;
+			margin:5px;
+		}
+		</style>
+	</head>
+</head>
+<body>
+    <header class="bg-primary" >
+        <div class="main-content container d-flex justify-content-between align-items-center">
+            <a style="text-decoration:none;" class="web-logo" href="#">时间差计算器</a>
+        </div>
+    </header>
+    <div class="main-content container" style='min-height:800px;'>
+        <h1 style="font-size:24px;text-align:center;">时间差计算</h1>
+        <div class="content-box">
+                <div class="form-row align-items-center justify-content-center">
+
+                    <div class="form-group col-md-3">
+                        <div class="d-flex align-items-center">
+                            <label for="month" style="width: 200px; margin-right: 0px;margin-top: 10px;">距离</label>
+                            <input type="number" class="form-control" id="year" name="year"  placeholder="" min="1" max="9999"  
+							value="2025"
+							required>
+							<label style="margin: 10px;">年</label>
+                        </div>
+                    </div>
+					<div class="form-group col-md-2">
+					    <div class="d-flex align-items-center">
+					    <input type="number" class="form-control" id="month" name="month" placeholder="" min="1" max="12" 
+						value="1"
+						required>
+						<label style="margin: 10px;">月</label>
+						</div>
+					</div>
+                    <div class="form-group col-md-2">
+					    <div class="d-flex align-items-center">
+                        <input type="number" class="form-control" id="day" name="day"  placeholder="" min="1" max="31"
+						value="1"
+						required>
+						<label style="margin: 10px;">日</label>
+						</div>
+                    </div>
+                    <div class="form-group col-md-1">
+					    <div class="d-flex align-items-center">
+                        <input type="number" class="form-control" id="clock" name="clock"  placeholder="" min="0" max="24"
+						value="5"
+						required>
+						<label style="margin: 10px;">时</label>
+						</div>
+                    </div>
+					<div class="form-group col-md-1">
+					    <div class="d-flex align-items-center">
+					    <input type="number" class="form-control" id="fen" name="fen"  placeholder="" min="0" max="60"
+						value="1"
+						required>
+						<label style="margin: 10px;">分</label>
+						</div>
+					</div>
+                    <div class="form-group col-md-2" style="text-align: left;">
+                        <button onclick="get()" class="btn btn-primary btn-block">计算时间差</button>
+                    </div>
+                </div>
+        </div>
+
+        <h2>时间差结果如下：</h2>
+         <div id="content-know">
+		 <div class="countdowndays" id="countdowndays">
+
+		 </div>
+		 </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="list-info">
+                    <ul>
+					<li><a href='haha0/1957-12-18-4-6.html'>距离公元1957年12月18日4时6分差多少时间</a></li>
+					<li><a href='haha1/1751-6-14-1-9.html'>距离公元1751年6月14日1时9分差多少时间</a></li>
+					<li><a href='haha2/1734-4-16-5-43.html'>距离公元1734年4月16日5时43分差多少时间</a></li>
+					<li><a href='haha3/1696-12-8-12-2.html'>距离公元1696年12月8日12时2分差多少时间</a></li>
+					<li><a href='haha4/1553-11-13-0-30.html'>距离公元1553年11月13日0时30分差多少时间</a></li>
+					</ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="list-info">
+                    <ul>
+            		<li><a href='haha5/1879-2-8-19-19.html'>距离公元1879年2月8日19时19分差多少时间</a></li>
+            		<li><a href='haha6/1750-1-11-11-1.html'>距离公元1750年1月11日11时1分差多少时间</a></li>
+            		<li><a href='haha7/1929-4-11-22-43.html'>距离公元1929年4月11日22时43分差多少时间</a></li>
+            		<li><a href='haha8/1975-7-17-2-32.html'>距离公元1975年7月17日2时32分差多少时间</a></li>
+            		<li><a href='haha9/1529-7-8-5-16.html'>距离公元1529年7月8日5时16分差多少时间</a></li>
+            		</ul>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+	    
+    <footer style="background: #f5f5f5; text-align: center; padding: 20px;">
+        <div class="container">
+            <p>时间计算网</p>
+        </div>
+    </footer>
+    </body>
+</html>
